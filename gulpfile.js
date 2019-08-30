@@ -15,7 +15,7 @@ const browserSync = require('browser-sync');
 sass.compiler = require('node-sass');
 
 gulp.task('sass', function () {
-  return gulp.src(['./sass/*.scss', './sass/**/*.scss'], { sourcemaps: true })
+  return gulp.src(['./html/sass/*.scss', './html/sass/**/*.scss'], { sourcemaps: true })
     .pipe(sass({
       outputStyle: 'compressed',
     }))
@@ -28,27 +28,27 @@ gulp.task('sass', function () {
       beautify: false
     }))
     // mapの出力
-    .pipe(gulp.dest('./css', { sourcemaps: './maps' }))
+    .pipe(gulp.dest('./html/css', { sourcemaps: '../maps' }))
     .pipe(browserSync.reload({ stream: true }))
     ;
 });
 
 // SASSのウオッチ
 gulp.task('sass:watch', function () {
-  gulp.watch(['./sass/*.scss', './sass/**/*.scss'], gulp.series('sass'));
+  gulp.watch(['./html/sass/*.scss', './html/sass/**/*.scss'], gulp.series('sass'));
 });
 
 
 // HTMLのウオッチ
 gulp.task('html:watch', function () {
-  gulp.watch(['./*.html', './**/*.html']).on('change', browserSync.reload);
+  gulp.watch(['./html/*.html', './html/**/*.html']).on('change', browserSync.reload);
 });
 
 //ブラウザシンク
 gulp.task('bs', function () {
   browserSync({
     server: {
-      baseDir: './',
+      baseDir: './html/',
       index: 'index.html'
     },
     open: true,
