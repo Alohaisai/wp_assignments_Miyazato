@@ -1,13 +1,15 @@
 .main {
+  background: $base-bgcolor-white;
   &__visual__img {
     width: 100%;
     position: relative;
   }
   &__text {
     position: absolute;
-    top: 50%;
+    top: 44%;
     left: 30%;
     color: $base-bgcolor-white;
     font-size: $base-fontsize * 5;
   }
+
 }

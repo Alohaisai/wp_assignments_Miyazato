@@ -1,14 +1,19 @@
 .header {
   height: 70px;
-  background-color: $base-bgcolor-blue;
+  background-color: rgba($color: $base-bgcolor-blue, $alpha: .3);
   color: $base-bgcolor-white;
   display: flex;
   justify-content: space-between;
   font-family: 'Vollkorn', serif;
+  z-index: 9999;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
 
   &__logo {
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 50px;
     font-size: $base-fontsize * 2;
   }
 
@@ -20,29 +25,31 @@
     display: inline;
     margin-right: 20px;
   }
+
+  &__nav ul li:hover{
+   border-bottom: 1px solid $base-bgcolor-white;
+   cursor: pointer;
+  }
 }
 
 @media screen and (max-width: 800px){
 .header {
   height: 120px;
-  background:$base-bgcolor-blue;
   color: $base-bgcolor-white;
   display: flex;
   flex-direction: column;
   // justify-content: space-between;
-  font-family: 'Kosugi Maru', sans-serif;
   text-align: center;
 
   &__logo {
     margin-top: 20px;
     font-size: $base-fontsize * 2.5;
-    font-family: 'Pacifico', cursive;
     margin-right: auto;
     margin-left: auto;
   }
 
   &__nav {
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 30px;
     margin-right: auto;
     margin-left: auto;

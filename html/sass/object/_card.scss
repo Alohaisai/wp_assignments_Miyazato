@@ -1,17 +1,54 @@
+// リボン
+.ribbon1 {
+  display: inline-block;
+  position: relative;
+  height: 50px;/*リボンの高さ*/
+  line-height: 50px;/*リボンの高さ*/
+  text-align: center;
+  padding: 0 40px;/*横の大きさ*/
+  font-size: 18px;/*文字の大きさ*/
+  background: $base-bgcolor-red;/*塗りつぶし色*/
+  color:$base-bgcolor-white;/*文字色*/
+  box-sizing: border-box;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  width: 70%;
 
-.flex {
-  display: flex;
+  &:before, &:after {
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 0px;
+    z-index: 1;
 }
+
+  &:before {
+    top: 0;
+    left: 0;
+    border-width: 25px 0px 25px 15px;
+    border-color: transparent transparent transparent #fff;
+    border-style: solid;
+}
+
+  &:after {
+    top: 0;
+    right: 0;
+    border-width: 25px 15px 25px 0px;
+    border-color: transparent #fff transparent transparent;
+    border-style: solid;
+}
+}
+// リボンここまで
 
 .card {
   margin: 100px auto;
-  width: 350px;
-  height: 400px;
+  width: 400px;
+  height: 530px;
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px #ccc;
   position: relative;
-  font-family: 'Kosugi Maru', sans-serif;
 
 
   &__img{
@@ -24,7 +61,7 @@
     font-size: 20px;
     margin-bottom: 20px;
     text-align: center;
-    color: #333;
+    // color: $base-bgcolor-blue;
     margin-top: $mt-contents;
 
   }
@@ -32,15 +69,35 @@
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-
   }
+
   &__btn{
     display: inline-block;
     padding: 0.5em 1em;
     text-decoration: none;
-    background: #668ad8;/*ボタン色*/
-    color: #FFF;
-    border-bottom: solid 4px #627295;
+    background: $base-bgcolor-white;/*ボタン色*/
+    color: $base-bgcolor-red;
+    // border-bottom: solid 4px $base-bgcolor-red;
+    // border-radius: 3px;
+    // display: block;
+    // margin-right: auto;
+    // margin-left: auto;
+    width: 40%;
+    text-align: center;
+    position: absolute;
+    top: 88%;
+    left: 25%;
+    transition: .3s;
+    border-bottom: 1px double $base-bgcolor-red;
+  }
+
+  &__btn:hover{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: $base-bgcolor-red;/*ボタン色*/
+    color: $base-bgcolor-white;
+    // border-bottom: solid 4px $base-bgcolor-red;
     border-radius: 3px;
     // display: block;
     // margin-right: auto;
@@ -48,10 +105,9 @@
     width: 40%;
     text-align: center;
     position: absolute;
-    top: 80%;
+    top: 88%;
     left: 25%;
   }
-
 }
 
 @media screen and (max-width: 800px){
@@ -61,23 +117,19 @@
   }
   .card {
   margin: 50px auto;
-
+  height: 550px;
 
     &__btn{
     display: inline-block;
     padding: 1em 1em;
     text-decoration: none;
-    background: #627295;/*ボタン色*/
-    color: #FFF;
-    border-bottom: solid 4px #668ad8;
-    border-radius: 3px;
     // display: block;
     // margin-right: auto;
     // margin-left: auto;
     width: 40%;
     text-align: center;
     position: absolute;
-    top: 83%;
+    top: 85%;
     left: 25%;
   }
 }

@@ -1,0 +1,22 @@
+.btn {
+  &__next{
+    color: $base-bgcolor-white;
+    background:$base-bgcolor-blue;
+    width: 30%;
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: .3s;
+  }
+
+  &__next:hover {
+    color: $base-bgcolor-blue;
+    background:$base-bgcolor-white;
+    border: 1px solid $base-bgcolor-blue;
+    box-sizing: border-box;
+  }
+}
