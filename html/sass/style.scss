@@ -1,12 +1,12 @@
 @charset 'UTF-8';
 @import 'foundation/_reset.scss';
-@import 'foundation/_base.scss';
+@import 'foundation/base';
 @import 'foundation/_variables.scss';
-@import 'layout/_footer.scss';
+@import 'layout/footer';
 @import 'layout/_header.scss';
 @import 'layout/_main.scss';
 @import 'object/_btn.scss';
-@import 'object/_card.scss';
+@import 'object/card';
 @import 'object/_gallery.scss';
 @import 'object/_nav.scss';
 @import 'object/_form.scss';
@@ -14,3 +14,4 @@
 @import 'object/flex.scss';
 @import 'object/article';
 @import 'object/container';
+@import 'object/sns';

@@ -4,6 +4,7 @@
     width: 100%;
     position: relative;
   }
+
   &__text {
     position: absolute;
     top: 44%;
@@ -11,5 +12,34 @@
     color: $base-bgcolor-white;
     font-size: $base-fontsize * 5;
   }
+}
+
+/* PC&TAB MediaQuery */
+@media only screen and (max-width:800px) {
+  .main{
+    &__text {
+      position: absolute;
+      top: 28%;
+      left: 27%;
+      color: $base-bgcolor-white;
+      font-size: $base-fontsize * 3;
+    }
+  }
+  }
+/* PC&TAB MediaQuery end */
+
+
+/* SP MediaQuery */
+@media only screen and (max-width:478px) {
+  .main{
+    &__text {
+      position: absolute;
+      top: 18%;
+      left: 25%;
+      color: $base-bgcolor-white;
+      font-size: $base-fontsize * 2;
+    }
+  }
 
 }
+/* SP MediaQuery end */

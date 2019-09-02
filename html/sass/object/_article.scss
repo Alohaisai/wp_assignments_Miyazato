@@ -1,19 +1,25 @@
 .article {
+  font-size: $base-fontsize * 1.2;
   &__img {
-    margin-top: 100px;
+    margin-top: 70px;
     width: 100%;
   }
+
   &__heading {
     color: $base-bgcolor-red;
     font-size: $base-fontsize * 2;
+    font-weight: bold;
     margin-top: 50px;
   }
+
   &__date {
+    color: $base-bgcolor-red;
     text-align: right;
     margin-bottom: 50px;
     font-size: $base-fontsize * 1.4;
   }
-  &__heading__content h2 {
+
+  &__content h2 {
     line-height: 60px;
     font-size: $base-fontsize * 1.7;
     background: $base-bgcolor-red;
@@ -23,7 +29,16 @@
     margin-top: 30px;
     margin-bottom: 30px;
     }
-  &__heading__content p{
+
+  &__content p{
     line-height: 1.8;
+  }
+
+  &__map {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
