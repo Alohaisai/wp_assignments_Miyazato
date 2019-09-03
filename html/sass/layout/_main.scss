@@ -1,4 +1,5 @@
 .main {
+  padding-top: 70px;
   background: $base-bgcolor-white;
   &__visual__img {
     width: 100%;
@@ -17,6 +18,7 @@
 /* PC&TAB MediaQuery */
 @media only screen and (max-width:800px) {
   .main{
+    padding-top: 100px;
     &__text {
       position: absolute;
       top: 28%;
@@ -32,6 +34,7 @@
 /* SP MediaQuery */
 @media only screen and (max-width:478px) {
   .main{
+    padding-top: 100px;
     &__text {
       position: absolute;
       top: 18%;

@@ -42,7 +42,7 @@
 // リボンここまで
 
 .card {
-  margin: 100px auto;
+  margin: 10px auto;
   width: 400px;
   height: 530px;
   background: #fff;
@@ -118,7 +118,7 @@
   display: flex;
   }
   .card {
-  margin: 50px 5px;
+  margin: 30px 5px;
   height: 500px;
   width: 33.33%;
 
@@ -143,9 +143,10 @@
   }
 
 .card{
-   margin: 20px auto;
+   margin: 25px auto;
    width: 400px;
    height: 530px;
+
   &__btn{
     top: 88%;
     left: 25%;
