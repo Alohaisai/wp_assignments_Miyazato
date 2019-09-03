@@ -1,7 +1,9 @@
 .article {
+  background:$base-bgcolor-white;
+  padding-top: 100px;
   font-size: $base-fontsize * 1.2;
   &__img {
-    margin-top: 70px;
+    margin-top: 10px;
     width: 100%;
   }
 
@@ -42,3 +44,33 @@
     margin-bottom: 20px;
   }
 }
+
+/* TAB&PC MediaQuery */
+@media only screen and (max-width:800px) {
+.article{
+  padding-top: 120px;
+  &__img {
+    margin-top: 10px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+  }
+}
+}
+/* TAB&PC MediaQuery end */
+
+/* SP MediaQuery */
+@media only screen and (max-width:478px) {
+.article{
+  padding-top: 120px;
+  &__img {
+    margin-top: 10px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+  }
+}
+}
+/* SP MediaQuery end */

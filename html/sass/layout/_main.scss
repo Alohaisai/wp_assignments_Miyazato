@@ -18,10 +18,10 @@
 /* PC&TAB MediaQuery */
 @media only screen and (max-width:800px) {
   .main{
-    padding-top: 100px;
+    padding-top: 120px;
     &__text {
       position: absolute;
-      top: 28%;
+      top: 39%;
       left: 27%;
       color: $base-bgcolor-white;
       font-size: $base-fontsize * 3;
@@ -34,11 +34,10 @@
 /* SP MediaQuery */
 @media only screen and (max-width:478px) {
   .main{
-    padding-top: 100px;
     &__text {
       position: absolute;
-      top: 18%;
-      left: 25%;
+      top: 29%;
+      left: 24%;
       color: $base-bgcolor-white;
       font-size: $base-fontsize * 2;
     }

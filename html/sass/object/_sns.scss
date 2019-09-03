@@ -1,6 +1,3 @@
-body {
-  background-color: #e1e1e1;
-}
 .sns {
   text-align: center;
   margin-top: 50px;
@@ -72,3 +69,21 @@ body {
     background-color: #D04829;
 }
 }
+
+/* SP MediaQuery */
+@media only screen and (max-width:478px) {
+.sns{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+
+  &__facebook,
+  &__twitter,
+  &__google {
+    margin-top: 10px;
+  }
+}
+}
+/* SP MediaQuery end */

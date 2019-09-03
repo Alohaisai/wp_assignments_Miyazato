@@ -49,7 +49,7 @@ gulp.task('bs', function () {
   browserSync({
     server: {
       baseDir: './html/',
-      index: 'index2.html'
+      index: 'index3.html'
     },
   })
 })
