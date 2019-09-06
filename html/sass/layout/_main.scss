@@ -1,3 +1,9 @@
+.fadein {
+  opacity : 0;
+  transform: translateY(20px);
+  transition: all 1s;
+}
+
 .main {
   padding-top: 70px;
   background: $base-bgcolor-white;
@@ -8,8 +14,8 @@
 
   &__text {
     position: absolute;
-    top: 44%;
-    left: 30%;
+    top: 26%;
+    left: 28%;
     color: $base-bgcolor-white;
     font-size: $base-fontsize * 5;
   }
@@ -21,7 +27,7 @@
     padding-top: 120px;
     &__text {
       position: absolute;
-      top: 39%;
+      top: 25%;
       left: 27%;
       color: $base-bgcolor-white;
       font-size: $base-fontsize * 3;
@@ -36,8 +42,8 @@
   .main{
     &__text {
       position: absolute;
-      top: 29%;
-      left: 24%;
+      top: 10%;
+      left: 25%;
       color: $base-bgcolor-white;
       font-size: $base-fontsize * 2;
     }

@@ -91,6 +91,29 @@
     border-bottom: 1px double $base-bgcolor-red;
   }
 
+  &__btn__back{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: $base-bgcolor-blue;/*ボタン色*/
+    color: $base-bgcolor-white;
+    // border-bottom: solid 4px $base-bgcolor-red;
+    // border-radius: 3px;
+    // display: block;
+    // margin-right: auto;
+    // margin-left: auto;
+    width: 30%;
+    text-align: center;
+    // position: absolute;
+    transition: .3s;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+
   &__btn:hover{
     display: inline-block;
     padding: 0.5em 1em;
@@ -120,7 +143,7 @@
   .card {
   margin: 30px 5px;
   height: 500px;
-  width: 33.33%;
+  width: 30%;
 
   &__btn{
     display: inline-block;
